@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone Computer Shop | Computer Shop Website with Enquiry Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Journal Bar for SYBCA AI Evaluation -->
+  <aside class="journal-topbar">
+    <div class="container journal-bar-content">
+      <span><strong>Project:</strong> Computer Shop Website with Enquiry Page</span>
+      <span><strong>Student:</strong> Hetvi Rajodiya (Roll No: 504)</span>
+      <span><strong>Class:</strong> SYBCA AI</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+        <span class="logo-text">TechZone <span class="logo-sub">Computer Shop</span></span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#categories" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#enquiry" class="nav-link nav-btn-enquiry">Enquiry</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text-box">
+          <span class="hero-tag">Best Computer Store in Surat</span>
+          <h1 class="hero-title">Upgrade Your Digital World</h1>
+          <h2 class="hero-subtitle">Computers, Laptops & Accessories at Affordable Prices</h2>
+          <p class="hero-description">
+            Find reliable computers, laptops, accessories and technical services for study, business and everyday use.
+          </p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">View Products</a>
+            <a href="#enquiry" class="btn btn-outline">Make an Enquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Our Store</span>
+          <h2 class="section-title">Welcome to TechZone</h2>
+          <div class="title-divider"></div>
+          <p class="section-intro">
+            TechZone Computer Shop provides quality computers, laptops, accessories and technical support for students, professionals, offices and home users.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Feature 1 -->
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Quality Products</h3>
+            <p class="feature-desc">100% genuine hardware, top brands, certified components, and official warranties for long-term peace of mind.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                <path d="M12 6v2"></path>
+                <path d="M12 16v2"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Affordable Prices</h3>
+            <p class="feature-desc">Budget-friendly pricing with special discounts for college students, tailored configurations, and transparent quotes.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Reliable Support</h3>
+            <p class="feature-desc">Quick turnaround repairs, professional OS installation, hardware upgrades, and dependable post-sale customer care.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop by Category Section -->
+    <section class="categories-section section-padding bg-light" id="categories">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Browse Inventory</span>
+          <h2 class="section-title">Shop by Category</h2>
+          <div class="title-divider"></div>
+          <p class="section-intro">Explore our comprehensive range of computing equipment categorized for your convenience.</p>
+        </div>
+
+        <div class="category-grid">
+          <!-- Category 1 -->
+          <div class="category-card" onclick="selectProductFromCategory('Laptop')">
+            <div class="category-image-wrap">
+              <img src="images/laptop.jpg" alt="Laptops Category" class="category-img" loading="lazy">
+              <div class="category-overlay">
+                <span>View Options</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <h3>Laptops</h3>
+              <p>Thin & light, gaming, student notebooks</p>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="category-card" onclick="selectProductFromCategory('Desktop Computer')">
+            <div class="category-image-wrap">
+              <img src="images/desktop.jpg" alt="Desktop Computers Category" class="category-img" loading="lazy">
+              <div class="category-overlay">
+                <span>View Options</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <h3>Desktop Computers</h3>
+              <p>Custom gaming rigs & office workstations</p>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="category-card" onclick="selectProductFromCategory('Monitor')">
+            <div class="category-image-wrap">
+              <img src="images/monitor.jpg" alt="Monitors Category" class="category-img" loading="lazy">
+              <div class="category-overlay">
+                <span>View Options</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <h3>Monitors</h3>
+              <p>IPS displays, 4K, high refresh rates</p>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="category-card" onclick="selectProductFromCategory('Computer Accessories')">
+            <div class="category-image-wrap">
+              <img src="images/accessories.jpg" alt="Accessories Category" class="category-img" loading="lazy">
+              <div class="category-overlay">
+                <span>View Options</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <h3>Accessories</h3>
+              <p>Webcams, hubs, cables & peripherals</p>
+            </div>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="category-card" onclick="selectProductFromCategory('Printer')">
+            <div class="category-image-wrap">
+              <img src="images/printer.jpg" alt="Printers Category" class="category-img" loading="lazy">
+              <div class="category-overlay">
+                <span>View Options</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <h3>Printers</h3>
+              <p>All-in-one wireless & laser printers</p>
+            </div>
+          </div>
+
+          <!-- Category 6 -->
+          <div class="category-card" onclick="selectProductFromCategory('Storage Device')">
+            <div class="category-image-wrap">
+              <img src="images/storage.jpg" alt="Storage Category" class="category-img" loading="lazy">
+              <div class="category-overlay">
+                <span>View Options</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <h3>Storage</h3>
+              <p>NVMe SSDs, external hard drives, pendrives</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Popular Products Section -->
+    <section class="products-section section-padding" id="products">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Hardware</span>
+          <h2 class="section-title">Our Popular Products</h2>
+          <div class="title-divider"></div>
+          <p class="section-intro">Choose any product below and click "Enquire Now" to automatically populate the enquiry form.</p>
+        </div>
+
+        <div class="product-grid">
+          <!-- Product 1: Laptop -->
+          <article class="product-card">
+            <div class="product-badge">Top Seller</div>
+            <div class="product-img-box">
+              <img src="images/laptop.jpg" alt="High Performance Laptop" class="product-img" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Laptop</h3>
+              <p class="product-desc">High-speed processor, extended battery backup, lightweight design perfect for college coding and projects.</p>
+              <div class="product-meta">
+                <span class="price-label">Price:</span>
+                <span class="product-price">Starting from ₹35,000</span>
+              </div>
+              <button class="btn btn-product enquire-btn" data-product="Laptop">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Enquire Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 2: Desktop Computer -->
+          <article class="product-card">
+            <div class="product-badge">Custom Built</div>
+            <div class="product-img-box">
+              <img src="images/desktop.jpg" alt="Desktop Computer Workstation" class="product-img" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Desktop Computer</h3>
+              <p class="product-desc">Powerful desktop CPU with upgradeable memory, dedicated graphics support, and efficient cooling.</p>
+              <div class="product-meta">
+                <span class="price-label">Price:</span>
+                <span class="product-price">Starting from ₹30,000</span>
+              </div>
+              <button class="btn btn-product enquire-btn" data-product="Desktop Computer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Enquire Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 3: Monitor -->
+          <article class="product-card">
+            <div class="product-badge">IPS Display</div>
+            <div class="product-img-box">
+              <img src="images/monitor.jpg" alt="Frameless Computer Monitor" class="product-img" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Monitor</h3>
+              <p class="product-desc">Full HD borderless display, anti-glare panel, crisp colors, and eye-protection filter for long study hours.</p>
+              <div class="product-meta">
+                <span class="price-label">Price:</span>
+                <span class="product-price">Starting from ₹8,000</span>
+              </div>
+              <button class="btn btn-product enquire-btn" data-product="Monitor">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Enquire Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 4: Keyboard -->
+          <article class="product-card">
+            <div class="product-badge">Durable</div>
+            <div class="product-img-box">
+              <img src="images/keyboard.jpg" alt="Ergonomic Keyboard" class="product-img" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Keyboard</h3>
+              <p class="product-desc">Ergonomic key layout, durable switches, spill-resistant finish, and comfortable typing experience.</p>
+              <div class="product-meta">
+                <span class="price-label">Price:</span>
+                <span class="product-price">Starting from ₹700</span>
+              </div>
+              <button class="btn btn-product enquire-btn" data-product="Keyboard">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Enquire Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 5: Mouse -->
+          <article class="product-card">
+            <div class="product-badge">High Precision</div>
+            <div class="product-img-box">
+              <img src="images/mouse.jpg" alt="Optical Computer Mouse" class="product-img" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Mouse</h3>
+              <p class="product-desc">High-precision optical tracking sensor, ergonomic grip, silent clicks, and smooth scrolling wheel.</p>
+              <div class="product-meta">
+                <span class="price-label">Price:</span>
+                <span class="product-price">Starting from ₹400</span>
+              </div>
+              <button class="btn btn-product enquire-btn" data-product="Mouse">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Enquire Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 6: Printer -->
+          <article class="product-card">
+            <div class="product-badge">Multi-Function</div>
+            <div class="product-img-box">
+              <img src="images/printer.jpg" alt="All In One Printer" class="product-img" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Printer</h3>
+              <p class="product-desc">All-in-one print, scan, and copy with high page-yield, wireless Wi-Fi printing, and sharp text output.</p>
+              <div class="product-meta">
+                <span class="price-label">Price:</span>
+                <span class="product-price">Starting from ₹6,000</span>
+              </div>
+              <button class="btn btn-product enquire-btn" data-product="Printer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Enquire Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 7: Computer Accessories -->
+          <article class="product-card">
+            <div class="product-badge">Essential Gear</div>
+            <div class="product-img-box">
+              <img src="images/accessories.jpg" alt="Computer Accessories" class="product-img" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Computer Accessories</h3>
+              <p class="product-desc">USB Type-C hubs, HDMI cables, laptop cooling pads, HD webcams, headphones, and cleaning solutions.</p>
+              <div class="product-meta">
+                <span class="price-label">Price:</span>
+                <span class="product-price">Starting from ₹500</span>
+              </div>
+              <button class="btn btn-product enquire-btn" data-product="Computer Accessories">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Enquire Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 8: Storage Devices -->
+          <article class="product-card">
+            <div class="product-badge">High Speed</div>
+            <div class="product-img-box">
+              <img src="images/storage.jpg" alt="Storage Devices SSD and HDD" class="product-img" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Storage Devices</h3>
+              <p class="product-desc">Blazing-fast NVMe M.2 SSDs, shock-resistant portable external hard disks, and high-speed USB flash drives.</p>
+              <div class="product-meta">
+                <span class="price-label">Price:</span>
+                <span class="product-price">Starting from ₹800</span>
+              </div>
+              <button class="btn btn-product enquire-btn" data-product="Storage Device">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Enquire Now
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="services-section section-padding bg-light" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Expert Technical Support</span>
+          <h2 class="section-title">Our Services</h2>
+          <div class="title-divider"></div>
+          <p class="section-intro">Professional maintenance, repairs, and installations handled by certified hardware technicians.</p>
+        </div>
+
+        <div class="service-grid">
+          <!-- Service 1 -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="images/repair.jpg" alt="Computer Repair Service" class="service-img" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="service-title">Computer Repair</h3>
+              <p class="service-desc">Complete desktop CPU troubleshooting, motherboard diagnosis, power supply replacement, and overheating fixes.</p>
+              <button class="btn-service-learn" onclick="handleServiceEnquiry('Computer Repair')">Learn More &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="images/service.jpg" alt="Laptop Repair Service" class="service-img" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Laptop Repair</h3>
+              <p class="service-desc">Broken display screen replacement, keyboard repair, hinge fixes, battery replacement, and liquid spill recovery.</p>
+              <button class="btn-service-learn" onclick="handleServiceEnquiry('Laptop Repair')">Learn More &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="images/desktop.jpg" alt="Software Installation Service" class="service-img" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Software Installation</h3>
+              <p class="service-desc">Installation of official development IDEs, Python, database servers, licensed antivirus, and productivity software.</p>
+              <button class="btn-service-learn" onclick="handleServiceEnquiry('Software Installation')">Learn More &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="images/laptop.jpg" alt="Windows Installation Service" class="service-img" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </div>
+              <h3 class="service-title">Windows Installation</h3>
+              <p class="service-desc">Clean installation of genuine Windows 10/11 with complete driver updates, partition setup, and data backup.</p>
+              <button class="btn-service-learn" onclick="handleServiceEnquiry('Windows Installation')">Learn More &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Service 5 -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="images/storage.jpg" alt="Hardware Upgrade Service" class="service-img" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 16 12 12 8 16"></polyline>
+                  <line x1="12" y1="12" x2="12" y2="21"></line>
+                  <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Hardware Upgrade</h3>
+              <p class="service-desc">Boost your computer speed with DDR4/DDR5 RAM upgrades, SSD migration, GPU addition, and thermal cooling service.</p>
+              <button class="btn-service-learn" onclick="handleServiceEnquiry('Hardware Upgrade')">Learn More &rarr;</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose TechZone Section (About) -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-column">
+            <div class="about-img-frame">
+              <img src="images/repair.jpg" alt="TechZone Computer Technician at Work" class="about-img" loading="lazy">
+              <div class="experience-card">
+                <span class="exp-number">10+</span>
+                <span class="exp-text">Years of Trusted Tech Service in Surat</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content-column">
+            <span class="section-tag">Trusted Technology Partner</span>
+            <h2 class="section-title">Why Choose TechZone?</h2>
+            <div class="title-divider-left"></div>
+            <p class="about-paragraph">
+              TechZone Computer Shop has been serving students, educators, and local businesses in Surat with premier IT solutions. We pride ourselves on delivering 100% genuine products, honest advice, competitive rates, and responsive technical assistance to keep your digital world running smoothly.
+            </p>
+
+            <ul class="why-choose-list">
+              <li class="why-item">
+                <span class="check-icon">&#10003;</span>
+                <div class="why-info">
+                  <strong>Quality Products:</strong>
+                  <span>Brand-certified laptops, custom desktops, and rigorously tested accessories with official warranties.</span>
+                </div>
+              </li>
+              <li class="why-item">
+                <span class="check-icon">&#10003;</span>
+                <div class="why-info">
+                  <strong>Affordable Pricing:</strong>
+                  <span>Transparent and student-friendly pricing structures designed to deliver maximum value for your investment.</span>
+                </div>
+              </li>
+              <li class="why-item">
+                <span class="check-icon">&#10003;</span>
+                <div class="why-info">
+                  <strong>Technical Assistance:</strong>
+                  <span>Skilled technicians ready to assist with custom PC assembly, troubleshooting, OS setup, and hardware maintenance.</span>
+                </div>
+              </li>
+              <li class="why-item">
+                <span class="check-icon">&#10003;</span>
+                <div class="why-info">
+                  <strong>Customer Satisfaction:</strong>
+                  <span>Over 5,000+ satisfied clients across Gujarat with dependable post-purchase assistance and prompt service.</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="about-cta">
+              <a href="#enquiry" class="btn btn-primary">Submit Product Enquiry</a>
+              <a href="#contact" class="btn btn-outline-dark">Visit Our Store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT ENQUIRY SECTION (MAIN FOCUS) -->
+    <section class="enquiry-section section-padding bg-light" id="enquiry">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Quick Quotation & Ordering</span>
+          <h2 class="section-title">Send Your Product Enquiry</h2>
+          <div class="title-divider"></div>
+          <p class="section-intro">
+            Interested in a product? Fill in the form below and send your enquiry. Our team will get back to you promptly with pricing and availability.
+          </p>
+        </div>
+
+        <!-- Enquiry Form Container -->
+        <div class="enquiry-form-card">
+          <!-- Submission Alert Box -->
+          <div id="enquirySuccessAlert" class="alert-box alert-success hidden">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="alert-icon">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <div class="alert-text">
+              <strong>Thank you! Your enquiry has been submitted successfully.</strong>
+              <span>We have saved your request in our system and will contact you shortly.</span>
+            </div>
+          </div>
+
+          <form id="enquiryForm" class="enquiry-form" novalidate>
+            <div class="form-row">
+              <!-- Full Name -->
+              <div class="form-group col-half">
+                <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" autocomplete="name">
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group col-half">
+                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. name@example.com" autocomplete="email">
+                <span class="error-msg" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- Mobile Number -->
+              <div class="form-group col-half">
+                <label for="mobile" class="form-label">Mobile Number <span class="required">*</span></label>
+                <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="10-digit mobile number" maxlength="10" autocomplete="tel">
+                <span class="error-msg" id="mobileError"></span>
+              </div>
+
+              <!-- Select Product -->
+              <div class="form-group col-half">
+                <label for="productSelect" class="form-label">Select Product <span class="required">*</span></label>
+                <select id="productSelect" name="product" class="form-control">
+                  <option value="">Select Product</option>
+                  <option value="Laptop">Laptop</option>
+                  <option value="Desktop Computer">Desktop Computer</option>
+                  <option value="Monitor">Monitor</option>
+                  <option value="Keyboard">Keyboard</option>
+                  <option value="Mouse">Mouse</option>
+                  <option value="Printer">Printer</option>
+                  <option value="Computer Accessories">Computer Accessories</option>
+                  <option value="Storage Device">Storage Device</option>
+                </select>
+                <span class="error-msg" id="productError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- Quantity -->
+              <div class="form-group col-half">
+                <label for="quantity" class="form-label">Quantity <span class="required">*</span></label>
+                <input type="number" id="quantity" name="quantity" class="form-control" min="1" value="1">
+                <span class="error-msg" id="quantityError"></span>
+              </div>
+
+              <!-- Preferred Contact Method -->
+              <div class="form-group col-half">
+                <label class="form-label">Preferred Contact Method <span class="required">*</span></label>
+                <div class="contact-method-options" id="contactMethodGroup">
+                  <label class="radio-label">
+                    <input type="radio" name="contactMethod" value="Phone">
+                    <span class="radio-custom"></span>
+                    Phone
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="contactMethod" value="Email">
+                    <span class="radio-custom"></span>
+                    Email
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="contactMethod" value="WhatsApp">
+                    <span class="radio-custom"></span>
+                    WhatsApp
+                  </label>
+                </div>
+                <span class="error-msg" id="contactMethodError"></span>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message" class="form-label">Message / Requirements <span class="required">*</span></label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Mention specific brand preferences, model specifications, budget, or timeline..."></textarea>
+              <span class="error-msg" id="messageError"></span>
+            </div>
+
+            <!-- Form Action Buttons -->
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-submit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Submit Enquiry
+              </button>
+              <button type="button" class="btn btn-secondary btn-clear" id="clearEnquiryBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+                Clear Form
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Enquiry Statistics Boxes -->
+        <div class="stats-wrapper">
+          <div class="stat-card">
+            <div class="stat-icon stat-total">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <div class="stat-data">
+              <span class="stat-number" id="totalEnquiriesCount">0</span>
+              <span class="stat-title">Total Enquiries</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon stat-laptop">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="2" y1="20" x2="22" y2="20"></line>
+              </svg>
+            </div>
+            <div class="stat-data">
+              <span class="stat-number" id="laptopEnquiriesCount">0</span>
+              <span class="stat-title">Laptop Enquiries</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon stat-other">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <div class="stat-data">
+              <span class="stat-number" id="otherEnquiriesCount">0</span>
+              <span class="stat-title">Other Enquiries</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Enquiries Section -->
+        <div class="recent-enquiries-box">
+          <div class="recent-header">
+            <h3 class="recent-title">Recent Enquiries</h3>
+            <span class="storage-badge">Saved in Browser LocalStorage</span>
+          </div>
+
+          <div id="enquiriesListContainer" class="enquiries-list">
+            <!-- Dynamic entries loaded from localStorage -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+          <div class="title-divider"></div>
+          <p class="section-intro">Have questions or want to visit our shop? Feel free to call, email or send a message directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information Cards -->
+          <div class="contact-info-col">
+            <div class="info-card">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4 class="info-heading">Phone Number</h4>
+                <p><a href="tel:6359936845" class="info-link">6359936845</a></p>
+                <span class="info-note">Mon to Sat: 10:00 AM - 9:00 PM</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4 class="info-heading">Email Address</h4>
+                <p><a href="mailto:hetvirajodiya@gmail.com" class="info-link">hetvirajodiya@gmail.com</a></p>
+                <span class="info-note">Direct response within 24 hours</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4 class="info-heading">Store Location</h4>
+                <p>Surat, Gujarat, India</p>
+                <span class="info-note">Convenient landmark near main market</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Contact Form -->
+          <div class="contact-form-col">
+            <div class="contact-form-card">
+              <h3 class="form-title">Send a Quick Message</h3>
+              <div id="contactSuccessAlert" class="alert-box alert-success hidden">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="alert-icon">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div class="alert-text">
+                  <strong>Thank you! Your message has been submitted successfully.</strong>
+                </div>
+              </div>
+
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="contactName" class="form-control" placeholder="Enter your full name">
+                  <span class="error-msg" id="contactNameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="Enter your email address">
+                  <span class="error-msg" id="contactEmailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="contactMessage" class="form-control" rows="4" placeholder="How can we assist you today?"></textarea>
+                  <span class="error-msg" id="contactMessageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>TechZone Computer Shop</span>
+          </div>
+          <p class="footer-desc">
+            Your trusted destination for computers, laptops, parts, and hardware maintenance in Surat, Gujarat.
+          </p>
+        </div>
+
+        <div class="footer-links-wrap">
+          <h4 class="footer-links-title">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="#home">Home</a>
+            <span class="link-separator">|</span>
+            <a href="#products">Products</a>
+            <span class="link-separator">|</span>
+            <a href="#services">Services</a>
+            <span class="link-separator">|</span>
+            <a href="#about">About</a>
+            <span class="link-separator">|</span>
+            <a href="#enquiry">Enquiry</a>
+            <span class="link-separator">|</span>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="academic-badge">
+          <span>SYBCA AI College Journal Project</span> &bull; 
+          <span>Student: Hetvi Rajodiya (Roll No: 504)</span>
+        </div>
+        <p class="copyright-text">
+          &copy; 2026 TechZone Computer Shop. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
